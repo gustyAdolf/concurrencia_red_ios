@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoriesCell" rowHeight="110" id="gLS-XH-ePx" customClass="CategoriesCell" customModule="DiscourseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gLS-XH-ePx" id="aJl-hh-ixh">
+                <rect key="frame" x="0.0" y="0.0" width="423" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2t-0I-3tR">
+                        <rect key="frame" x="5" y="10" width="413" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topics that don't need a category, or don't fit into any other existing category." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d26-Nw-kJa">
+                        <rect key="frame" x="10" y="44" width="403" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="d26-Nw-kJa" secondAttribute="trailing" constant="10" id="4qO-0V-fUt"/>
+                    <constraint firstItem="d26-Nw-kJa" firstAttribute="top" secondItem="d2t-0I-3tR" secondAttribute="bottom" constant="10" id="Cnl-gh-ekY"/>
+                    <constraint firstItem="d2t-0I-3tR" firstAttribute="top" secondItem="aJl-hh-ixh" secondAttribute="top" constant="10" id="GTW-9p-IV3"/>
+                    <constraint firstItem="d2t-0I-3tR" firstAttribute="leading" secondItem="aJl-hh-ixh" secondAttribute="leading" constant="5" id="lkd-3D-fMD"/>
+                    <constraint firstAttribute="trailing" secondItem="d2t-0I-3tR" secondAttribute="trailing" constant="5" id="sg8-Mw-FSm"/>
+                    <constraint firstItem="d26-Nw-kJa" firstAttribute="leading" secondItem="aJl-hh-ixh" secondAttribute="leading" constant="10" id="tn2-m4-Lp3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="categoryDescription" destination="d26-Nw-kJa" id="7ue-5c-g3X"/>
+                <outlet property="categoryTitle" destination="d2t-0I-3tR" id="6rD-pV-OGo"/>
+            </connections>
+            <point key="canvasLocation" x="183.33333333333334" y="117.1875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
